@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:10:18:20 +0800] "GET /CounterWebApp/name/afdas HTTP/1.1" 200 186 http-bio-8080-exec-4 80
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:10:18:21 +0800] "GET /CounterWebApp/name/afdas HTTP/1.1" 200 186 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:10:18:21 +0800] "GET /CounterWebApp/name/afdas HTTP/1.1" 200 186 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:10:18:22 +0800] "GET /CounterWebApp/name/afdas HTTP/1.1" 200 186 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:10:18:22 +0800] "GET /CounterWebApp/name/afdas HTTP/1.1" 200 186 http-bio-8080-exec-4 6
