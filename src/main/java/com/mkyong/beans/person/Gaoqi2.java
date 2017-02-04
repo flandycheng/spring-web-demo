@@ -1,4 +1,4 @@
-package com.mkyong.beans;
+package com.mkyong.beans.person;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

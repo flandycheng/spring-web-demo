@@ -1,4 +1,4 @@
-package com.mkyong.beans;
+package com.mkyong.beans.person;
 
 /**
  * Created by zhenggaoqi on 1/21/17.

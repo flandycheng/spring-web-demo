@@ -1,7 +1,7 @@
 package com.mkyong.entrance;
 
-import com.mkyong.beans.Gaoqi1;
-import com.mkyong.beans.Gaoqi2;
+import com.mkyong.beans.person.Gaoqi1;
+import com.mkyong.beans.person.Gaoqi2;
 import com.mkyong.myface.Person;
 import com.mkyong.testevent.EmailEvent;
 import org.springframework.context.ApplicationContext;

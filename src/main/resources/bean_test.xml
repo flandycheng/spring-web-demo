@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+    <context:annotation-config/>
+    
+    
     <!-- 配置一个singleton Bean实例：默认 -->
-    <bean id="bean1" class="com.mkyong.beans.Gaoqi1"/>
+    <bean id="bean1" class="com.mkyong.beans.person.Gaoqi1"/>
     <!-- 配置一个prototype Bean实例 -->
-    <bean id="bean2" class="com.mkyong.beans.Gaoqi2" scope="prototype"/>
+    <bean id="bean2" class="com.mkyong.beans.person.Gaoqi2" scope="prototype"/>
 
     <bean id="emailLister" class="com.mkyong.testevent.EmailNotifier"/>
 
 
-    <bean id="chinese" class="com.mkyong.beans.Chinese">
+    <bean id="chinese" class="com.mkyong.beans.person.Chinese">
         <property name="axe" ref="stoneAxe"/>
         <property name="name" value="孙悟空"/>
     </bean>
 
-    <bean id="japanese" class="com.mkyong.beans.Japanese">
+    <bean id="japanese" class="com.mkyong.beans.person.Japanese">
         <constructor-arg ref="stoneAxe"/>
+        <property name="name" value="高仓健"/>
     </bean>
 
 
-    <bean id="stoneAxe" class="com.mkyong.beans.StoneAxe">
+    <bean id="stoneAxe" class="com.mkyong.beans.axe.StoneAxe">
 
     </bean>
 </beans>

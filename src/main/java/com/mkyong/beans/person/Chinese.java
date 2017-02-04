@@ -1,4 +1,4 @@
-package com.mkyong.beans;
+package com.mkyong.beans.person;
 
 import com.mkyong.myface.Axe;
 import com.mkyong.myface.Person;
@@ -12,8 +12,7 @@ public class Chinese implements Person {
     private String name;
 
     public void useAxe() {
-        System.out.println("I am " + this.name);
-        System.out.println("I am using, " + this.axe.chop());
+        System.out.println(this.getClass().toString() + " 在使用 " + axe.chop());
     }
 
     public void setAxe(Axe axe) {

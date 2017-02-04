@@ -1,4 +1,4 @@
-package com.mkyong.beans;
+package com.mkyong.beans.person;
 
 import com.mkyong.myface.Axe;
 import com.mkyong.myface.Person;
@@ -8,6 +8,7 @@ import com.mkyong.myface.Person;
  */
 public class Japanese implements Person{
     private Axe axe;
+    private String name;
     //默认构造器
     public Japanese(){
 
@@ -18,7 +19,11 @@ public class Japanese implements Person{
         this.axe = axe;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void useAxe() {
-        System.out.println(this.getClass()+" using "+axe.chop());
+        System.out.println(this.getClass().toString() + " が使ってんの " + axe.chop());
     }
 }

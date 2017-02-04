@@ -1,4 +1,4 @@
-package com.mkyong.beans;
+package com.mkyong.beans.axe;
 
 import com.mkyong.myface.Axe;
 
@@ -8,6 +8,6 @@ import com.mkyong.myface.Axe;
 public class StoneAxe implements Axe {
 
     public String chop(){
-        return "石头斧子砍柴好慢啊";
+        return " 石头斧子好烂.." + this.toString();
     }
 }
