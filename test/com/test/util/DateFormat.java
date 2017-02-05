@@ -1,6 +1,5 @@
 package com.test.util;
 
-import com.mkyong.beans.person.Chinese;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

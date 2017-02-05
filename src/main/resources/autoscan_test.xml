@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                              http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                                              http://www.springframework.org/schema/context
+                                              http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    <context:component-scan base-package="com.fucheng" >
+        <context:include-filter type="regex" expression="com.fucheng.dao.*DAO.*" />
+        <context:include-filter type="regex" expression="com.fucheng.service.*Service.*" />
+        <context:include-filter type="regex" expression="com.fucheng.teststh.EL*" />
+        <context:exclude-filter type="annotation" expression="com.fucheng.annotation.ExcludeService"/>
+        <context:exclude-filter type="regex" expression="com.fucheng.beans.person.*"/>
+    </context:component-scan>
+</beans>

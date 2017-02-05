@@ -1,22 +1,18 @@
-<html>
-<body>
-<h1>Welcome crevisei!!!</h1>
-<h1>Maven + Spring MVC Web Project Example</h1>
+<%@ include file="home/header.jsp" %>
+<%@ include file="home/navigation.jsp" %>
 
 
- EEEEEEEEEFFFFDDDDD
-
-<h3>Message : ${message}</h3>
-<h3>Counter : ${counter}</h3>	
+<%@ include file="home/layout.jsp" %>
+<%@ include file="user/introduce.jsp" %>
 
 <hr>
 
-<a href="/name/zhangfei"> Zhangfei </a>
-<hr>
-<a href="/name/guanyu"> Guanyu </a>
-<hr>
-<a href="/name/handang"> Handang </a>
-<hr>
+Message : ${message} , Counter : ${counter} .
 
-</body>
-</html>
+<a class="btn bg-success" href="/name/zhangfei"> Zhangfei </a>
+<a class="btn bg-success" href="/name/guanyu"> Guanyu </a>
+<a class="btn bg-success" href="/name/handang"> Handang </a>
+
+
+<%@ include file="home/footer.jsp" %>
+

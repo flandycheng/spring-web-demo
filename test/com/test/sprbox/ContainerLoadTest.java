@@ -1,10 +1,10 @@
 package com.test.sprbox;
 
-import com.mkyong.beans.person.Chinese;
-import com.mkyong.beans.person.Japanese;
-import com.mkyong.beans.person.Korean;
-import com.mkyong.beans.axe.GoldenAxe;
-import com.mkyong.factory.PersonConfiguration;
+import com.fucheng.beans.person.Chinese;
+import com.fucheng.beans.person.Japanese;
+import com.fucheng.beans.person.Korean;
+import com.fucheng.beans.axe.GoldenAxe;
+import com.fucheng.factory.PersonConfiguration;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -63,5 +63,6 @@ public class ContainerLoadTest {
         korean.useAxe();
 
     }
+
 
 }

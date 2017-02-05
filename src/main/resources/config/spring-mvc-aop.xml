@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                              http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <!-- 需排除拦截的地址 -->
+            <mvc:exclude-mapping path="/login"/>
+            <mvc:exclude-mapping path="/index"/>
+            <mvc:exclude-mapping path="/timeout"/>
+            <mvc:exclude-mapping path="/otherLogin"/>
+            <mvc:exclude-mapping path="/themes/**"/>
+            <mvc:exclude-mapping path="/js/**"/>
+            <mvc:exclude-mapping path="/api/**"/>
+            <mvc:exclude-mapping path="/download/**"/>
+            <mvc:exclude-mapping path="/rtpic/**"/>
+            <mvc:exclude-mapping path="/tmplate/**"/>
+            <mvc:exclude-mapping path="/exportExcelDemo/**"/>
+            <bean class="com.fucheng.controller.BaseController"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+</beans>

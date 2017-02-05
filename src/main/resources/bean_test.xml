@@ -9,28 +9,27 @@
 
 
     <context:annotation-config/>
-    
-    
+
+
     <!-- 配置一个singleton Bean实例：默认 -->
-    <bean id="bean1" class="com.mkyong.beans.person.Gaoqi1"/>
+    <bean id="bean1" class="com.fucheng.beans.person.Gaoqi1"/>
     <!-- 配置一个prototype Bean实例 -->
-    <bean id="bean2" class="com.mkyong.beans.person.Gaoqi2" scope="prototype"/>
+    <bean id="bean2" class="com.fucheng.beans.person.Gaoqi2" scope="prototype"/>
 
-    <bean id="emailLister" class="com.mkyong.testevent.EmailNotifier"/>
+    <bean id="emailLister" class="com.fucheng.teststh.EmailNotifier"/>
 
 
-    <bean id="chinese" class="com.mkyong.beans.person.Chinese">
+    <bean id="chinese" class="com.fucheng.beans.person.Chinese">
         <property name="axe" ref="stoneAxe"/>
         <property name="name" value="孙悟空"/>
     </bean>
 
-    <bean id="japanese" class="com.mkyong.beans.person.Japanese">
+    <bean id="japanese" class="com.fucheng.beans.person.Japanese">
         <constructor-arg ref="stoneAxe"/>
         <property name="name" value="高仓健"/>
     </bean>
 
 
-    <bean id="stoneAxe" class="com.mkyong.beans.axe.StoneAxe">
-
+    <bean id="stoneAxe" class="com.fucheng.beans.axe.StoneAxe">
     </bean>
 </beans>
